@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=PB, initial-scale=1.0" />
+    <title>Public Bank Berhad - Personal Banking</title>
+    <meta
+      name="description"
+      content="Public Bank, a complete one-stop financial portal, offering a range of accounts, credit cards, loans, deposits and other financial aids for our personal and commercial customers."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="links">
+        <a href="/index.html"></a>
+        <img src="static/Logo.svg" alt="Logo" width="144px" height="40px" />
+        <a href="#">cards</a><a href="#">banking</a><a href="#">invest</a
+        ><a href="#">insure</a><a href="#">contact us</a
+        ><a href="#">useful links</a>
+      </div>
+      <div class="search">
+        <select name="type">
+          <option value="personal">personal</option>
+          <option value="business">business</option>
+        </select>
+        <img
+          src="./static/magnifying-glass.svg"
+          alt="Search"
+          width="24px"
+          height="24px"
+        />
+      </div>
+      <div class="mobile-nav">
+        <input type="checkbox" id="modal" />
+        <label class="btn btn-primary modal-trigger" for="modal">Log In</label>
+        <label class="modal-background" for="modal"></label>
+        <form class="modal-login login-form">
+          <div>
+            <div class="modal-header">
+              <h2>
+                log in
+                <label for="modal"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.2806 18.2198C19.3503 18.2895 19.4056 18.3722 19.4433 18.4632C19.481 18.5543 19.5004 18.6519 19.5004 18.7504C19.5004 18.849 19.481 18.9465 19.4433 19.0376C19.4056 19.1286 19.3503 19.2114 19.2806 19.281C19.2109 19.3507 19.1282 19.406 19.0372 19.4437C18.9461 19.4814 18.8485 19.5008 18.75 19.5008C18.6515 19.5008 18.5539 19.4814 18.4628 19.4437C18.3718 19.406 18.2891 19.3507 18.2194 19.281L12 13.0607L5.78063 19.281C5.6399 19.4218 5.44902 19.5008 5.25 19.5008C5.05098 19.5008 4.86011 19.4218 4.71938 19.281C4.57865 19.1403 4.49958 18.9494 4.49958 18.7504C4.49958 18.5514 4.57865 18.3605 4.71938 18.2198L10.9397 12.0004L4.71938 5.78104C4.57865 5.64031 4.49958 5.44944 4.49958 5.25042C4.49958 5.05139 4.57865 4.86052 4.71938 4.71979C4.86011 4.57906 5.05098 4.5 5.25 4.5C5.44902 4.5 5.6399 4.57906 5.78063 4.71979L12 10.9401L18.2194 4.71979C18.3601 4.57906 18.551 4.5 18.75 4.5C18.949 4.5 19.1399 4.57906 19.2806 4.71979C19.4214 4.86052 19.5004 5.05139 19.5004 5.25042C19.5004 5.44944 19.4214 5.64031 19.2806 5.78104L13.0603 12.0004L19.2806 18.2198Z"
+                      fill="#0E1D29"
+                    />
+                  </svg>
+                </label>
+              </h2>
+            </div>
+            <select name="option" id="">
+              <option value="1">PBe</option>
+              <option value="2">PBe Enterprise</option>
+              <option value="3">Share Trading</option>
+              <option value="4">PBe QR</option>
+            </select>
+            <div class="username">
+              <label for="username">username</label>
+              <input type="text" placeholder="Enter Username" name="username" />
+              <a href="#" class="btn-link">forgot ID</a>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Continue
+            </button>
+            <div class="or">
+              <hr />
+              or
+              <hr />
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg">
+              Register
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="drawer" />
+        <label class="hamburger modal-trigger" for="drawer">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12ZM3.75 6.75H20.25C20.4489 6.75 20.6397 6.67098 20.7803 6.53033C20.921 6.38968 21 6.19891 21 6C21 5.80109 20.921 5.61032 20.7803 5.46967C20.6397 5.32902 20.4489 5.25 20.25 5.25H3.75C3.55109 5.25 3.36032 5.32902 3.21967 5.46967C3.07902 5.61032 3 5.80109 3 6C3 6.19891 3.07902 6.38968 3.21967 6.53033C3.36032 6.67098 3.55109 6.75 3.75 6.75ZM20.25 17.25H3.75C3.55109 17.25 3.36032 17.329 3.21967 17.4697C3.07902 17.6103 3 17.8011 3 18C3 18.1989 3.07902 18.3897 3.21967 18.5303C3.36032 18.671 3.55109 18.75 3.75 18.75H20.25C20.4489 18.75 20.6397 18.671 20.7803 18.5303C20.921 18.3897 21 18.1989 21 18C21 17.8011 20.921 17.6103 20.7803 17.4697C20.6397 17.329 20.4489 17.25 20.25 17.25Z"
+              fill="#0E1D29"
+            />
+          </svg>
+        </label>
+        <label class="modal-background" for="drawer"></label>
+        <div class="modal-drawer">Hello World</div>
+      </div>
+    </nav>
+    <header>
+      <div class="carousel">
+        <div class="shadow-top"></div>
+        <div class="shadow-bottom"></div>
+        <svg
+          class="indicator left-indicator"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C20.1433 4.5 16.3731 5.64366 13.1664 7.78634C9.95963 9.92903 7.46027 12.9745 5.98436 16.5377C4.50845 20.1008 4.12228 24.0216 4.8747 27.8043C5.62711 31.5869 7.4843 35.0615 10.2114 37.7886C12.9386 40.5157 16.4131 42.3729 20.1957 43.1253C23.9784 43.8777 27.8992 43.4916 31.4623 42.0156C35.0255 40.5397 38.071 38.0404 40.2137 34.8336C42.3564 31.6269 43.5 27.8567 43.5 24C43.4945 18.83 41.4383 13.8732 37.7826 10.2174C34.1268 6.56167 29.1701 4.50546 24 4.5ZM24 40.5C20.7366 40.5 17.5465 39.5323 14.8331 37.7192C12.1197 35.9062 10.0048 33.3293 8.756 30.3143C7.50715 27.2993 7.1804 23.9817 7.81705 20.781C8.45371 17.5803 10.0252 14.6403 12.3327 12.3327C14.6403 10.0252 17.5803 8.4537 20.781 7.81704C23.9817 7.18039 27.2993 7.50714 30.3143 8.75599C33.3293 10.0048 35.9062 12.1197 37.7193 14.8331C39.5323 17.5465 40.5 20.7366 40.5 24C40.495 28.3745 38.7551 32.5685 35.6618 35.6618C32.5685 38.7551 28.3746 40.495 24 40.5ZM33 24C33 24.3978 32.842 24.7794 32.5607 25.0607C32.2794 25.342 31.8978 25.5 31.5 25.5H20.1206L23.5613 28.9387C23.7006 29.0781 23.8112 29.2436 23.8866 29.4257C23.962 29.6077 24.0008 29.8029 24.0008 30C24.0008 30.1971 23.962 30.3923 23.8866 30.5743C23.8112 30.7564 23.7006 30.9219 23.5613 31.0613C23.4219 31.2006 23.2564 31.3112 23.0744 31.3866C22.8923 31.462 22.6971 31.5008 22.5 31.5008C22.3029 31.5008 22.1078 31.462 21.9257 31.3866C21.7436 31.3112 21.5781 31.2006 21.4388 31.0613L15.4388 25.0613C15.2993 24.9219 15.1887 24.7565 15.1132 24.5744C15.0377 24.3923 14.9988 24.1971 14.9988 24C14.9988 23.8029 15.0377 23.6077 15.1132 23.4256C15.1887 23.2435 15.2993 23.0781 15.4388 22.9387L21.4388 16.9387C21.7202 16.6573 22.102 16.4992 22.5 16.4992C22.8981 16.4992 23.2798 16.6573 23.5613 16.9387C23.8427 17.2202 24.0008 17.602 24.0008 18C24.0008 18.398 23.8427 18.7798 23.5613 19.0613L20.1206 22.5H31.5C31.8978 22.5 32.2794 22.658 32.5607 22.9393C32.842 23.2206 33 23.6022 33 24Z"
+            fill="inherit"
+          />
+        </svg>
+        <svg
+          class="indicator right-indicator"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C20.1433 4.5 16.3731 5.64366 13.1664 7.78634C9.95963 9.92903 7.46027 12.9745 5.98436 16.5377C4.50845 20.1008 4.12228 24.0216 4.8747 27.8043C5.62711 31.5869 7.4843 35.0615 10.2114 37.7886C12.9386 40.5157 16.4131 42.3729 20.1957 43.1253C23.9784 43.8777 27.8992 43.4916 31.4623 42.0156C35.0255 40.5397 38.071 38.0404 40.2137 34.8336C42.3564 31.6269 43.5 27.8567 43.5 24C43.4945 18.83 41.4383 13.8732 37.7826 10.2174C34.1268 6.56167 29.1701 4.50546 24 4.5ZM24 40.5C20.7366 40.5 17.5465 39.5323 14.8331 37.7192C12.1197 35.9062 10.0048 33.3293 8.756 30.3143C7.50715 27.2993 7.1804 23.9817 7.81705 20.781C8.45371 17.5803 10.0252 14.6403 12.3327 12.3327C14.6403 10.0252 17.5803 8.4537 20.781 7.81704C23.9817 7.18039 27.2993 7.50714 30.3143 8.75599C33.3293 10.0048 35.9062 12.1197 37.7193 14.8331C39.5323 17.5465 40.5 20.7366 40.5 24C40.495 28.3745 38.7551 32.5685 35.6618 35.6618C32.5685 38.7551 28.3746 40.495 24 40.5ZM32.5613 22.9387C32.7007 23.0781 32.8114 23.2435 32.8868 23.4256C32.9623 23.6077 33.0012 23.8029 33.0012 24C33.0012 24.1971 32.9623 24.3923 32.8868 24.5744C32.8114 24.7565 32.7007 24.9219 32.5613 25.0613L26.5613 31.0613C26.2798 31.3427 25.8981 31.5008 25.5 31.5008C25.102 31.5008 24.7202 31.3427 24.4388 31.0613C24.1573 30.7798 23.9992 30.398 23.9992 30C23.9992 29.602 24.1573 29.2202 24.4388 28.9387L27.8794 25.5H16.5C16.1022 25.5 15.7207 25.342 15.4393 25.0607C15.158 24.7794 15 24.3978 15 24C15 23.6022 15.158 23.2206 15.4393 22.9393C15.7207 22.658 16.1022 22.5 16.5 22.5H27.8794L24.4388 19.0613C24.1573 18.7798 23.9992 18.398 23.9992 18C23.9992 17.602 24.1573 17.2202 24.4388 16.9387C24.7202 16.6573 25.102 16.4992 25.5 16.4992C25.8981 16.4992 26.2798 16.6573 26.5613 16.9387L32.5613 22.9387Z"
+            fill="inherit"
+          />
+        </svg>
+
+        <div class="carousel-item">
+          <div class="carousel-item-container">
+            <img src="./static/banner/temporary.jpg" alt="Banner 01" />
+            <button class="btn btn-primary btn-lg">Find Out More</button>
+            <button class="btn btn-primary btn-sm">Find Out More</button>
+          </div>
+        </div>
+        <div class="pagination"></div>
+      </div>
+      <form class="login-form">
+        <div>
+          <h2>log in</h2>
+          <select name="option" id="">
+            <option value="1">PBe</option>
+            <option value="2">PBe Enterprise</option>
+            <option value="3">Share Trading</option>
+            <option value="4">PBe QR</option>
+          </select>
+          <div class="username">
+            <label for="username">username</label>
+            <input type="text" placeholder="Enter Username" name="username" />
+            <a href="#" class="btn-link">forgot ID</a>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+          <div class="or">
+            <hr />
+            or
+            <hr />
+          </div>
+          <button type="button" class="btn btn-secondary btn-lg">
+            Register
+          </button>
+        </div>
+      </form>
+    </header>
+    <div class="needs">
+      <h1 class="header">Your Needs and Solutions</h1>
+      <div class="cta-container">
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Apply Loan.svg"
+              alt="Apply Loan"
+            />
+            <p class="cta-label">Apply Loan</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Apply Card.svg"
+              alt="Apply Card"
+            />
+            <p class="cta-label">Apply Card</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Cancel Card.svg"
+              alt="Cancel Card"
+            />
+            <p class="cta-label">Cancel Card</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Rates & Changes.svg"
+              alt="Rates & Changes"
+            />
+            <p class="cta-label">Rates & Changes</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Branch Locator.svg"
+              alt="Branch Locator"
+            />
+            <p class="cta-label">Branch Locator</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Announcement.svg"
+              alt="Announcement"
+            />
+            <p class="cta-label">Announcement</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Security Alerts.svg"
+              alt="Security Alerts"
+            />
+            <p class="cta-label">Security Alerts</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Press Released.svg"
+              alt="Press Released"
+            />
+            <p class="cta-label">Press Released</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/SecureSign.svg"
+              alt="SecureSign"
+            />
+            <p class="cta-label">SecureSign</p>
+          </div>
+        </div>
+        <div class="cta-wrapper">
+          <div>
+            <img
+              class="cta-icon"
+              src="./static/cta/Online Security.svg"
+              alt="Online Security"
+            />
+            <p class="cta-label">Online Security</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promotion">
+      <h1>Promotion</h1>
+      <div class="content-container">
+        <div class="promotion-item">
+          <div class="">
+            <img
+              src="./static/promotion/Image 01.png"
+              alt="Image 01"
+              class="promotion-image"
+            />
+            <h3>Convert your VIP Point / Air Miles Now</h3>
+          </div>
+          <a href="#" class="link-button">Learn More</a>
+        </div>
+        <div class="promotion-item">
+          <img
+            src="./static/promotion/Image 02.png"
+            alt="Image 02"
+            class="promotion-image"
+          />
+          <h3>Convert your VIP Point / Air Miles Now</h3>
+          <a href="#" class="link-button">Learn More</a>
+        </div>
+        <div class="promotion-item">
+          <img
+            src="./static/promotion/Image 03.png"
+            alt="Image 03"
+            class="promotion-image"
+          />
+          <h3>Convert your VIP Point / Air Miles Now</h3>
+          <a href="#" class="link-button">Learn More</a>
+        </div>
+        <div class="promotion-item">
+          <img
+            src="./static/promotion/Image 04.png"
+            alt="Image 04"
+            class="promotion-image"
+          />
+          <h3>Convert your VIP Point / Air Miles Now</h3>
+          <a href="#" class="link-button">Learn More</a>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg">View More</button>
+    </div>
+    <div class="footer">
+      <div class="footer-upper-part">
+        <details>
+          <summary>
+            Products & Services
+            <img src="./static/chevron-down.svg" alt="Down" />
+          </summary>
+          <div>
+            <a href="#">Cards</a>
+            <a href="#">Banking</a>
+            <a href="#">Invest</a>
+            <a href="#">Insure</a>
+            <a href="#">Useful Links</a>
+            <a href="#">Apply Card</a>
+            <a href="#">Cancel Card</a>
+            <a href="#">Rates & Changes</a>
+            <a href="#">SecureSign</a>
+            <a href="#">Online Security</a>
+          </div>
+        </details>
+        <details>
+          <summary>
+            Why Us
+            <img src="./static/chevron-down.svg" alt="Down" />
+          </summary>
+          <div>
+            <a href="#">About Us</a>
+            <a href="#">Announcement</a>
+            <a href="#">Career</a>
+            <a href="#">Promotion</a>
+          </div>
+        </details>
+        <details>
+          <summary>
+            Help & Support
+            <img src="./static/chevron-down.svg" alt="Down" />
+          </summary>
+          <div>
+            <a href="#">Frequently Asked Question</a>
+            <a href="#">Branch</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </details>
+        <details>
+          <summary>
+            Public Bank
+            <img src="./static/chevron-down.svg" alt="Down" />
+          </summary>
+          <div>
+            <a href="#">Public Islamic Bank</a>
+            <a href="#">Public Investment Bank</a>
+            <a href="#">Public Mutual</a>
+            <a href="#">Public Bank (L) Ltd.</a>
+            <a href="#">Public Bank (Hong Kong)</a>
+            <a href="#">Public Finance Limited</a>
+            <a href="#">Cambodian Public Bank</a>
+            <a href="#">Public Bank Vietnam</a>
+            <a href="#">PB Trustee Services</a>
+          </div>
+        </details>
+      </div>
+      <div class="footer-lower-part">
+        <div class="connect-us">
+          <h3 class="footer-title">Connect Us</h3>
+          <div class="social media">
+            <img
+              src="./static/social media/facebook-logo.svg"
+              alt="Facebook"
+              class="social-media-icon"
+            />
+            <img
+              src="./static/social media/instagram-logo.svg"
+              alt="Instagram"
+              class="social-media-icon"
+            />
+            <img
+              src="./static/social media/linkedin-logo.svg"
+              alt="Linkedin"
+              class="social-media-icon"
+            />
+            <img
+              src="./static/social media/twitter-logo.svg"
+              alt="Twitter"
+              class="social-media-icon"
+            />
+            <img
+              src="./static/social media/wechat-logo.svg"
+              alt="Wechat"
+              class="social-media-icon"
+            />
+            <img
+              src="./static/social media/youtube-logo.svg"
+              alt="Youtube"
+              class="social-media-icon"
+            />
+          </div>
+        </div>
+        <div class="partnership">
+          <h3 class="footer-title">Partnership</h3>
+          <div class="social media">
+            <img
+              src="static/partnership/Component 1.svg"
+              alt="Partner 1"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 2.svg"
+              alt="Partner 2"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 3.svg"
+              alt="Partner 3"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 4.svg"
+              alt="Partner 4"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 5.svg"
+              alt="Partner 5"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 6.svg"
+              alt="Partner 6"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 7.svg"
+              alt="Partner 7"
+              class="partnership-logo"
+            />
+            <img
+              src="static/partnership/Component 8.svg"
+              alt="Partner 8"
+              class="partnership-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright © 2023 Public Bank Berhad 196501000672 (6463-H). ALL RIGHTS
+        RESERVED.
+      </p>
+      <p>
+        Terms & Conditions | Privacy | Security | Customer Service Charter |
+        Bank Negara Malaysia
+      </p>
+    </div>
+    <script src="./details-listener.js"></script>
+  </body>
+</html>

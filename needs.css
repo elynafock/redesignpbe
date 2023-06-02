@@ -1,0 +1,69 @@
+.needs {
+  margin: 4rem auto;
+  overflow: hidden;
+}
+
+.cta-container {
+  max-width: 976px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  padding: 2rem;
+  padding-bottom: 0px;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 34.5px;
+  padding-bottom: 34.5px;
+  box-shadow: 0px 4px 8px rgba(138, 160, 182, 0.16);
+  background: #ffffff;
+}
+
+.cta-icon {
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cta-label {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 1100px) {
+  .cta-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 328px;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-top: 24px;
+    padding: 0;
+    justify-items: center;
+  }
+  .cta-wrapper {
+    background: transparent;
+    box-shadow: none;
+    width: 98.67px;
+    height: 98px;
+    padding: 0;
+  }
+  .cta-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .cta-label {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    height: 42px;
+  }
+}

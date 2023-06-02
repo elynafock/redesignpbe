@@ -1,0 +1,160 @@
+:root {
+  --white: #ffffff;
+  --primary-200: #f69493;
+  --primary-600: #ed1c23;
+  --primary-800: #ce0015;
+  --info-500: #00aee8;
+  --info-700: #0065a7;
+  --secondary-50: #e6effb;
+  --secondary-300: #8aa0b6;
+  --secondary-400: #728ba4;
+  --secondary-700: #3e556b;
+  --secondary-900: #0e1d29;
+
+  --box-shadow: 0px 4px 14px 0px #8aa0862e;
+  --common-transition: 0.2s all ease-in-out;
+
+  /* z indices */
+  --z-index-nav: 1000;
+  --z-index-header-indicator: 1;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto";
+  background-color: #eee;
+}
+
+h2 {
+  margin: 0px;
+}
+
+::placeholder {
+  color: var(--secondary-400);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--secondary-400);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--secondary-400);
+}
+
+.btn {
+  height: 2rem;
+  border-radius: 0.25rem;
+  padding: 0rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--common-transition);
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: var(--primary-600);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-800);
+}
+
+.btn-secondary {
+  border: 1px solid var(--secondary-700);
+  background-color: var(--white);
+  color: var(--secondary-700);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-700);
+  color: var(--white);
+}
+.btn-sm {
+  height: 2rem;
+  font-size: 14px;
+}
+.btn-lg {
+  height: 3rem;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--secondary-700);
+}
+
+select {
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: var(--secondary-50);
+  border: none;
+  padding: 0.5rem;
+  height: 40px;
+}
+
+input {
+  font-size: 16px;
+  /* line-height: 1.5; */
+}
+
+a {
+  text-decoration: none;
+  width: max-content;
+  color: var(--secondary-900);
+  transition: var(--common-transition);
+}
+
+a:hover {
+  color: var(--secondary-900);
+}
+
+.btn-link {
+  color: var(--info-500);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  color: var(--info-700);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0px;
+  line-height: 48px;
+}
+
+.max-width-button {
+  color: var(--white);
+  background-color: var(--primary-600);
+  height: 48px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.mobile-nav {
+  display: flex;
+}
+
+@media only screen and (max-width: 1100px) {
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
