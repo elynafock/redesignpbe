@@ -111,9 +111,12 @@ header .carousel .carousel-item-container .btn-sm {
   .mobile-nav input[type="checkbox"] {
     display: none;
   }
-  input[type="checkbox"]:checked ~ .modal-login,
-  input[type="checkbox"]:checked ~ .modal-drawer,
-  input[type="checkbox"]:checked ~ .modal-background {
+  #login:checked ~ .modal-login,
+  #login:checked ~ .modal-background[for="login"] {
+    display: flex;
+  }
+  #drawer:checked ~ .modal-drawer,
+  #drawer:checked ~ .modal-background[for="drawer"] {
     display: flex;
   }
   .modal-background {
