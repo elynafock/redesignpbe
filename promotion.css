@@ -3,6 +3,8 @@
   text-align: center;
   margin-bottom: 64px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .promotion-item {
@@ -27,7 +29,11 @@
   color: var(--info-500);
   display: block;
   text-align: left;
-  font-weight: 500;
+  font-weight: bold;
+}
+
+.learn-more-button:hover {
+  color: var(--info-700);
 }
 .content-container {
   justify-content: center;

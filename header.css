@@ -18,7 +18,7 @@ header .carousel .indicator {
 }
 
 header .carousel .indicator:hover {
-  fill: var(--primary-600);
+  fill: var(--white);
 }
 
 header .carousel .left-indicator {
