@@ -63,4 +63,7 @@ nav .mobile-nav {
     cursor: pointer;
     background: transparent;
   }
+  nav .burger {
+    cursor: pointer;
+  }
 }

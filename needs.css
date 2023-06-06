@@ -23,6 +23,14 @@
   background: #ffffff;
 }
 
+.cta-wrapper:hover {
+  background: var(--secondary-50);
+}
+
+.cta-wrapper:active {
+  background: var(--secondary-100);
+}
+
 .cta-icon {
   width: 56px;
   height: 56px;

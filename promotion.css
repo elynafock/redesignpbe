@@ -17,6 +17,18 @@
   height: 240px;
 }
 
+.promotion-description {
+  margin-top: 1rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.learn-more-button {
+  color: var(--info-500);
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
 .content-container {
   justify-content: center;
   display: flex;
