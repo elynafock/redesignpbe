@@ -16,6 +16,9 @@ header .carousel .indicator {
   transition: var(--common-transition);
   z-index: var(--z-index-header-indicator);
 }
+header .carousel .indicator > .indicator-background {
+  box-shadow: 0px 4px 8px rgba(138, 160, 182, 0.16);
+}
 
 header .carousel .indicator:hover {
   fill: var(--secondary-700);
@@ -111,6 +114,7 @@ header .carousel .carousel-item-container .btn-sm {
 }
 
 header .carousel .pagination {
+  z-index: 2;
   position: absolute;
   bottom: 16px;
   left: 50%;
