@@ -105,15 +105,21 @@ header .carousel .carousel-item-container .btn-sm {
 .login-form .actions .or hr {
   flex: 1; /* how many space i want to use */
 }
+
 .shadow-bottom {
   display: none;
 }
-header .carousel .carousel-item-container .pagination {
+
+header .carousel .pagination {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   text-align: center;
-  position: absolute;
 }
+
 .selected-dot {
   height: 8px;
   width: 24px;
