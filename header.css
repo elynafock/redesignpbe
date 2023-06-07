@@ -116,25 +116,20 @@ header .carousel .pagination {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  align-items: center;
-  text-align: center;
+  column-gap: 4px;
 }
 
-.selected-dot {
-  height: 8px;
+.dot.selected {
+  cursor: default;
   width: 24px;
-  margin: 0 8px;
-  background-color: #ed1c23;
   border-radius: 40px;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  background-color: var(--primary-600);
 }
 
 .dot {
   cursor: pointer;
   height: 8px;
   width: 8px;
-  margin: 0 2px;
   background-color: #ffffff99;
   border-radius: 50%;
   display: inline-block;
