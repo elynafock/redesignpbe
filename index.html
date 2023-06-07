@@ -154,6 +154,7 @@
           viewBox="0 0 48 48"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
+          onclick="back()"
         >
           <path
             class="indicator-arrow"
@@ -183,6 +184,7 @@
           viewBox="0 0 24 24"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
+          onclick="next()"
         >
           <path
             class="indicator-outline"
@@ -207,19 +209,12 @@
 
         <div class="carousel-item">
           <div class="carousel-item-container">
-            <img src="./static/banner/banner01.png" alt="Banner 01" />
+            <img src="" alt="" />
             <button class="btn btn-primary btn-sm">Find Out More</button>
           </div>
         </div>
 
-        <div class="pagination">
-          <span class="dot selected"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+        <div class="pagination"></div>
       </div>
       <form class="login-form">
         <div>
@@ -561,6 +556,6 @@
       </p>
     </div>
     <script src="./details-listener.js"></script>
-    <script src="./pagination.js"></script>
+    <script src="./carousel.js"></script>
   </body>
 </html>
