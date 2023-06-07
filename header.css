@@ -11,13 +11,21 @@ header .carousel .indicator {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--primary-200);
+  fill: var(--white);
   cursor: pointer;
   transition: var(--common-transition);
   z-index: var(--z-index-header-indicator);
 }
 
 header .carousel .indicator:hover {
+  fill: var(--secondary-700);
+}
+
+header .carousel .indicator > .indicator-arrow {
+  fill: var(--secondary-700);
+}
+
+header .carousel .indicator:hover > .indicator-arrow {
   fill: var(--white);
 }
 
