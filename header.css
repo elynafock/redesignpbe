@@ -118,14 +118,13 @@ header .carousel .pagination {
   display: flex;
   column-gap: 4px;
 }
-<<<<<<< HEAD
+
 header .carousel .carousel-item-container .pagination .selected-dot {
   height: 8px;
-=======
+}
 
 .dot.selected {
-  cursor: default;
->>>>>>> 5423337f6e019890ee21d87c6369da08f41b4687
+  cursor: pointer;
   width: 24px;
   border-radius: 40px;
   background-color: var(--primary-600);
