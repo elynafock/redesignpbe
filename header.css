@@ -119,10 +119,6 @@ header .carousel .pagination {
   column-gap: 4px;
 }
 
-header .carousel .carousel-item-container .pagination .selected-dot {
-  height: 8px;
-}
-
 header .carousel .pagination .dot.selected {
   cursor: pointer;
   width: 24px;
