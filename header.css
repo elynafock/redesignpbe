@@ -123,14 +123,14 @@ header .carousel .carousel-item-container .pagination .selected-dot {
   height: 8px;
 }
 
-.dot.selected {
+header .carousel .pagination .dot.selected {
   cursor: pointer;
   width: 24px;
   border-radius: 40px;
   background-color: var(--primary-600);
 }
 
-header .carousel .carousel-item-container .pagination .dot {
+header .carousel .pagination .dot {
   cursor: pointer;
   height: 8px;
   width: 8px;
