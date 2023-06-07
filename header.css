@@ -116,7 +116,7 @@ header .carousel .carousel-item-container .btn-sm {
 header .carousel .pagination {
   z-index: 2;
   position: absolute;
-  bottom: 16px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
