@@ -1,4 +1,4 @@
-.hamburger {
+.drawer {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -6,25 +6,16 @@
   align-items: stretch;
   row-gap: 24px;
 }
+
 .close-svg {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
 }
+
 .navlinks {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   color: var(--secondary-900);
-}
-.mobile-search-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  background: var(--white);
-  box-shadow: 0px 12px 20px rgba(138, 160, 182, 0.2);
-  color: var(--secondary-400);
 }

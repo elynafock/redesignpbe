@@ -97,7 +97,9 @@ header .carousel .carousel-item-container .btn-sm {
 .login-form .actions {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   row-gap: 1rem;
+  width: 100%;
 }
 
 .login-form .actions .or {
@@ -158,16 +160,7 @@ header .carousel .pagination .dot {
   #drawer:checked ~ .modal-background[for="drawer"] {
     display: flex;
   }
-  .modal-background {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 9998;
-  }
+
   .modal-login {
     position: fixed;
     /* top: 0; */
@@ -179,14 +172,14 @@ header .carousel .pagination .dot {
     height: 80vh;
     background-color: #fff;
     box-sizing: border-box;
-    z-index: 9999;
+    z-index: var(--z-index-modal-content);
   }
   .modal-drawer {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: var(--z-index-modal-content);
     bottom: 0;
     height: 100vh;
     background: var(--white);
