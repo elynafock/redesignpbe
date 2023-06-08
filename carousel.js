@@ -30,7 +30,6 @@ function showItem(n) {
 
 /**
  * Updates the pagination UI
- * @param {number} n index of updated carousel item
  */
 function updatePagination() {
   const dots = document.querySelectorAll(".dot");

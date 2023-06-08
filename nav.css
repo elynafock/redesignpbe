@@ -29,20 +29,46 @@ nav .links a {
   text-transform: capitalize;
 }
 
-nav .search {
+nav .actions {
   display: flex;
   align-items: center;
   column-gap: 2rem;
   width: 210px;
 }
 
-nav .search select {
+nav .actions select {
   flex: 1;
   text-transform: capitalize;
 }
+
+nav .search {
+  position: relative;
+}
+nav .search input[type="checkbox"] {
+  display: none;
+}
+nav .search label[for="search"] {
+  cursor: pointer;
+}
+nav .search .input-group {
+  display: none;
+}
+nav .search #search:checked ~ .modal-background[for="search"] {
+  display: flex;
+}
+nav .search #search:checked ~ .modal-search {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(calc(100% + 1.5rem));
+  z-index: var(--z-index-modal-content);
+}
+
 nav .mobile-nav {
   display: none;
 }
+
 @media only screen and (max-width: 1100px) {
   /* For mobile phones: */
   nav {
@@ -55,7 +81,7 @@ nav .mobile-nav {
   nav .links a {
     display: none;
   }
-  nav .search {
+  nav .actions {
     display: none;
   }
   nav .hamburger {
