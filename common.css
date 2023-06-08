@@ -58,6 +58,7 @@ h2 {
   font-weight: bold;
   font-size: 14px;
   z-index: 2;
+  font-family: "Roboto";
 }
 
 .btn-primary {
@@ -172,7 +173,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   background: var(--white);
