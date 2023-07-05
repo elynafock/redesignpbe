@@ -1,16 +1,10 @@
+import { isDesktop } from "./utils.js"
+
 /**
  * get all the 'details' elements
  * @type {NodeListOf<HTMLDetailsElement>}
  */
 const allDetails = document.querySelectorAll('details')
-
-/**
- * checks if user's device is a desktop
- * @type {boolean}
- */
-function isDesktop() {
-  return window.innerWidth > 1100
-}
 
 /**
  * opens all the 'details' elements
