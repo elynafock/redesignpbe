@@ -73,6 +73,7 @@ nav .mobile-nav {
   /* For mobile phones: */
   nav {
     padding: 0 1rem;
+    background: rgba(255, 255, 255);
   }
   nav .mobile-nav {
     display: flex;
