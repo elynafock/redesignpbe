@@ -1,5 +1,3 @@
-import { isDesktop } from "./utils.js"
-
 /**
  * get all the 'details' elements
  * @type {NodeListOf<HTMLDetailsElement>}
