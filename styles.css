@@ -1,8 +1,8 @@
-@import "common.css";
-@import "header.css";
-@import "nav.css";
-@import "needs.css";
-@import "promotion.css";
-@import "footer.css";
-@import "copyright.css";
-@import "drawer.css";
+@import "./styles/common.css";
+@import "./styles/header.css";
+@import "./styles/nav.css";
+@import "./styles/needs.css";
+@import "./styles/promotion.css";
+@import "./styles/footer.css";
+@import "./styles/copyright.css";
+@import "./styles/drawer.css";
