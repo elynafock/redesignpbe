@@ -1,5 +1,3 @@
-import { isDesktop } from "./utils.js"
-
 const MAX_CAROUSEL_ITEMS = 2;
 let currentIndex = 0;
 let size = 'lg'
